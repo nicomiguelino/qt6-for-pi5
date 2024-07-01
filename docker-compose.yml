@@ -13,3 +13,4 @@ services:
       - ./src:/app/src
       - ./main.pro:/app/main.pro
       - /dev/fb0:/dev/fb0
+      - ./build:/app/build
