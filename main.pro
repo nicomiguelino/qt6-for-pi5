@@ -5,4 +5,5 @@ QT += gui widgets
 
 TARGET = main
 INCLUDEPATH += .
-SOURCES += main.cpp
+# set source path to src
+SOURCES += src/main.cpp

@@ -1,0 +1,15 @@
+services:
+  viewer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: bash
+    environment:
+      - QT_QPA_PLATFORM=linuxfb
+    privileged: true
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./src:/app/src
+      - ./main.pro:/app/main.pro
+      - /dev/fb0:/dev/fb0
